@@ -40,6 +40,7 @@ export default function App() {
   };
   return (
     <Router>
+      <div>XDD</div>
       <NavbarTest onRemove={onRemove} onAdd={onAdd} cartItems={cartItems} />
       <Routes>
         <Route path="/about" element={<About />} />
