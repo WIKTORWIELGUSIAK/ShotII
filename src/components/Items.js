@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Test from "./Test";
+import Item from "./Item";
 
 export default function Tests(props) {
   const [recipies, setRecipies] = useState([]);
@@ -14,8 +14,8 @@ export default function Tests(props) {
     setRecipies(data);
   };
   return (
-    <div className="w-full h-full px-10 pt-10 grid text-center bg-gray-100">
-      <Test onAdd={onAdd} recipies={recipies} />
+    <div className="w-full h-full px-10 pt-10 grid text-center bg-gray-100 laptop:px-20 4K:px-28">
+      <Item onAdd={onAdd} recipies={recipies} />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Basket from "./components/Basket";
-import Tests from "./components/Tests";
+import Items from "./components/Items";
 import NavbarTest from "./components/NavbarTest";
 import Contact from "./components/Contact";
 import About from "./components/About";
@@ -44,7 +44,7 @@ export default function App() {
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/" element={<Tests onAdd={onAdd} />} />
+        <Route path="/" element={<Items onAdd={onAdd} />} />
         <Route
           path="/basket"
           element={

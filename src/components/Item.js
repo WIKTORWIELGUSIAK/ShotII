@@ -4,9 +4,12 @@ export default function Test(props) {
   const { recipies, onAdd } = props;
   console.log(recipies);
   return (
-    <div className=" grid gap-4 mb-16 mt-10 tablet:grid-cols-2 laptop:grid-cols-3 4K:grid-cols-4">
+    <div className=" grid gap-4 mb-16 mt-10 tablet:grid-cols-2 laptop:grid-cols-3 4K:grid-cols-4 laptopL:gap-10 laptop:gap-6 4K:gap-16">
       {recipies.map((product) => (
-        <div key={product.id} className="w-full h-96 border-2 bg-white py-2">
+        <div
+          key={product.id}
+          className="w-full h-96 border-2 bg-white py-3 pt-4"
+        >
           <img
             src={product.image}
             alt={product.title}
