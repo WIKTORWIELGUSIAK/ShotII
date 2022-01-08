@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Basket from "./components/Basket";
 import Items from "./components/Items";
-import NavbarTest from "./components/NavbarTest";
+import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import ErrorPage from "./components/ErrorPage";
@@ -40,7 +40,7 @@ export default function App() {
   };
   return (
     <Router>
-      <NavbarTest onRemove={onRemove} onAdd={onAdd} cartItems={cartItems} />
+      <Navbar onRemove={onRemove} onAdd={onAdd} cartItems={cartItems} />
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
