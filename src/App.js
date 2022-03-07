@@ -1,9 +1,10 @@
+/** @format */
+
 import React, { useState } from "react";
 import Basket from "./components/Basket";
 import Items from "./components/Items";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
-import About from "./components/About";
 import ErrorPage from "./components/ErrorPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 export default function App() {
@@ -42,7 +43,6 @@ export default function App() {
     <Router>
       <Navbar onRemove={onRemove} onAdd={onAdd} cartItems={cartItems} />
       <Routes>
-        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/" element={<Items onAdd={onAdd} />} />
         <Route
@@ -58,7 +58,6 @@ export default function App() {
         />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-      {/* <Tests onAdd={onAdd} /> */}
     </Router>
   );
 }

@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
@@ -43,16 +45,6 @@ export default function Navbar(props) {
           onMouseEnter={removeBasket}
           className={` z-40 flex flex-col tracking-wide text-center justify-around ${active} tablet:basis-1/2 tablet:mr-10 tablet:flex-row tablet:h-10 tablet:static tablet:nav-links-tablet tablet:transition-none my-auto`}
         >
-          <li>
-            <Link onClick={closeMenu} to="/about">
-              Tab1
-            </Link>
-          </li>
-          <li>
-            <Link onClick={closeMenu} to="/about">
-              Tab2
-            </Link>
-          </li>
           <li>
             <Link onClick={closeMenu} to="/contact">
               CONTACT
